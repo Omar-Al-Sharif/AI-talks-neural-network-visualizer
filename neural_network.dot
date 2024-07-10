@@ -1,0 +1,115 @@
+digraph "Graph" {
+	graph [arrowShape=none,
+		bb="0,0,514,465.5",
+		nodesep=1,
+		ranksep=2,
+		splines=false
+	];
+	node [label="\N"];
+	edge [arrowhead=none,
+		color="#707070"
+	];
+	subgraph cluster_input {
+		graph [arrowShape="",
+			bb="8,393,506,457.5",
+			color=white,
+			rank=same
+		];
+		node [color="#2ecc71",
+			fontcolor="#2ecc71",
+			shape=circle,
+			style=filled
+		];
+		1	[height=0.5,
+			pos="34,425.25",
+			width=0.5];
+		2	[height=0.5,
+			pos="142,425.25",
+			width=0.5];
+		3	[height=0.5,
+			pos="250,425.25",
+			width=0.5];
+		444	[color=white,
+			fontcolor=black,
+			fontsize=18,
+			height=0.67361,
+			label="Input Units: 3
+Activation: softmax",
+			pos="419,425.25",
+			shape=rectangle,
+			width=2.2014];
+	}
+	subgraph cluster_1 {
+		graph [arrowShape="",
+			bb="8,200.5,506,265",
+			color=white,
+			rank=same
+		];
+		4	[color="#3498db",
+			fontcolor="#3498db",
+			height=0.5,
+			pos="250,232.75",
+			shape=circle,
+			style=filled,
+			width=0.5];
+		5	[color="#3498db",
+			fontcolor="#3498db",
+			height=0.5,
+			pos="34,232.75",
+			shape=circle,
+			style=filled,
+			width=0.5];
+		6	[color="#3498db",
+			fontcolor="#3498db",
+			height=0.5,
+			pos="142,232.75",
+			shape=circle,
+			style=filled,
+			width=0.5];
+		333	[color=white,
+			fontcolor=black,
+			fontsize=18,
+			height=0.67361,
+			label="Units: 3
+Activation: softmax",
+			pos="419,232.75",
+			shape=rectangle,
+			width=2.2014];
+	}
+	subgraph cluster_output {
+		graph [arrowShape="",
+			bb="116,8,382,72.5",
+			color=white,
+			labeljust=1,
+			rank=same
+		];
+		7	[color="#e74c3c",
+			fontcolor="#e74c3c",
+			height=0.5,
+			pos="142,40.25",
+			shape=circle,
+			style=filled,
+			width=0.5];
+		666	[color=white,
+			fontcolor=black,
+			fontsize=18,
+			height=0.67361,
+			label="Output Units: 1
+Activation: linear",
+			pos="303,40.25",
+			shape=rectangle,
+			width=1.9618];
+	}
+	1 -> 4	[pos="47.187,412.62 85.748,378.61 198.02,279.59 236.71,245.47"];
+	1 -> 5	[pos="34,407.01 34,370.83 34,287.35 34,251.09"];
+	1 -> 6	[pos="42.656,408.98 62.928,373.22 113.29,284.39 133.45,248.83"];
+	2 -> 4	[pos="150.66,408.98 170.93,373.22 221.29,284.39 241.45,248.83"];
+	2 -> 5	[pos="133.34,408.98 113.07,373.22 62.711,284.39 42.547,248.83"];
+	2 -> 6	[pos="142,407.01 142,370.83 142,287.35 142,251.09"];
+	3 -> 4	[pos="250,407.01 250,370.83 250,287.35 250,251.09"];
+	3 -> 5	[pos="236.81,412.62 198.25,378.61 85.98,279.59 47.288,245.47"];
+	3 -> 6	[pos="241.34,408.98 221.07,373.22 170.71,284.39 150.55,248.83"];
+	4 -> 7	[pos="241.34,216.48 221.07,180.72 170.71,91.893 150.55,56.326"];
+	5 -> 7	[pos="42.656,216.48 62.928,180.72 113.29,91.893 133.45,56.326"];
+	6 -> 7	[pos="142,214.51 142,178.33 142,94.853 142,58.59"];
+}
