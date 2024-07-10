@@ -1,6 +1,5 @@
 digraph "Graph" {
 	graph [nodesep=1 ranksep=2 splines=false]
-    rankdir=LR;
 	edge [arrowhead=none color="#707070"]
 	subgraph cluster_input {
 		node [color=teal fontcolor=teal shape=circle style=filled]
@@ -11,7 +10,7 @@ digraph "Graph" {
 		rank=same
 		3
 		rank=same
-Activation: softmax" color=white fontcolor=black fontsize=18 shape=rectangle]
+
 	}
 	1 -> 4
 	2 -> 4
@@ -25,7 +24,7 @@ Activation: softmax" color=white fontcolor=black fontsize=18 shape=rectangle]
 	subgraph cluster_1 {
 		color=white
 		rank=same
-Activation: softmax" color=white fontcolor=black fontsize=18 shape=rectangle]
+
 		4 [color=gray fontcolor=gray shape=circle style=filled]
 		5 [color=gray fontcolor=gray shape=circle style=filled]
 		6 [color=gray fontcolor=gray shape=circle style=filled]
@@ -34,7 +33,7 @@ Activation: softmax" color=white fontcolor=black fontsize=18 shape=rectangle]
 	5 -> 7
 	6 -> 7
 	subgraph cluster_output {
-Activation: linear" color=white fontcolor=black fontsize=18 shape=rectangle]
+
 		color=white
 		rank=same
 		labeljust=1
