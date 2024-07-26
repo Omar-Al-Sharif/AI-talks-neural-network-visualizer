@@ -74,3 +74,19 @@ model = models.Sequential([
 ])
 
 """
+
+
+"""
+
+model = models.Sequential([
+    layers.Input((3,)),
+    layers.Dense(3, activation='selu'),
+    layers.Dense(5, activation='selu'),
+    layers.Dense(7, activation='selu'),
+    layers.Dense(5, activation='selu'),
+    layers.Dense(3, activation='selu'),
+    layers.Dense(1)
+])
+
+"""
+
